@@ -7,6 +7,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" id="stylesheet"/>
 </head>
 <body>
@@ -34,15 +35,18 @@
                     </div>
                 </nav>
         </div>
+        <div data-relative-input="true" id="scene">
         <div class="column is-full">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/leaf7.png" class="is-pulled-left leaf">
         </div>
         <div class="column is-offset-2 is-half">
         <h1 class="title is-3 is-pulled-left">And the sun took a step back, the leaves lulled themselves to sleep and autumn was awakened...</h1>
         </div>
+        </div>
     </div>
 </body>
 <script>
+
     document.addEventListener('DOMContentLoaded', () => {
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
         if ($navbarBurgers.length > 0) {
@@ -63,5 +67,6 @@
             $(".navbar-menu").toggleClass("is-active");
         });
     });
+
 </script>
 </html>
